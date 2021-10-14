@@ -2,6 +2,7 @@ body {
   background-color: #F1F1F1;
 }
 
+
 @media only screen and (max-width: 768px) {
   body {
     text-align: center;
@@ -10,6 +11,7 @@ body {
     align-content: center;
   }
 }
+
 
 .btn-outline-success {
   color: indigo;
@@ -41,9 +43,13 @@ body {
   background-color: transparent;
 }
 
+.btn-check:focus+.btn-primary,.btn-primary:focus{
+  color:#fff;background-color:indigo;border-color:indigo;box-shadow:0 0 0 .25rem rgba(75, 0, 130, 0.5)
+}
+
 .navbar-expand-md .navbar-nav .nav-link {
   margin-top: 0;
-  padding: 20px 30px;
+  padding: 20px 35px;
 }
 
 .nav-link:hover {
@@ -58,10 +64,6 @@ body {
 }
 
 .navbar {
-  padding: 0;
-}
-
-.fixed-top {
   padding: 0;
 }
 
@@ -163,7 +165,7 @@ body {
 }
 
 .contactSpacing {
-  padding: 10px 30px;
+  padding: 10px 75px;
 }
 
 .card {
@@ -194,7 +196,7 @@ body {
   font-weight: lighter;
 }
 
-.middle{
+.middle {
   margin-left: auto;
   margin-right: auto;
 }
@@ -205,4 +207,68 @@ hr{
   width: 85%;
   padding: 1px;
   color: #c7c7c7;
+}
+
+.navbar-toggler{
+  margin-right: 25px;
+}
+
+.btn-primary .toggled{
+  color: indigo !important;
+}
+
+
+.service-card {
+  margin: 5% 0 5% 0;
+  height: 250px;
+  width: 375px;
+  border-radius: 15px;
+  background-color: #F1F1F1;
+  border: none;
+  box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.5)
+}
+
+
+.service-info{
+  margin-top: 15%;
+}
+
+.service-row p{
+  color: grey;
+}
+
+.portfolio-card{
+  margin: 5% 0 5% 0;
+  height:400px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: #F1F1F1;
+  border: none;
+  box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.5);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container h1{
+  margin-top: 5%;
+  text-align: center;
+}
+
+.portfolio-card img{
+  height: 150px;
+  width: 300px;
+  border-radius: 15px 15px 0 0;
+}
+
+.portfolio-card h3{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.portfolio-card p{
+  margin-top: 2.5%;
+  margin-left: 5%;
+  color: grey;
+}
+.portfolio-card button{
+  margin-right: 35%;
 }
